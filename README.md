@@ -1,6 +1,6 @@
-# Whisk Chess
+# Serverless and Portal Chess
 
-This is `whisk-chess`, the game of chess implemented as a serverless cloud application, using OpenWhisk. This single project may be deployed, as is, to multiple serverless clouds. It is an example of the power of a true, portable, multicloud serverless platform.
+This is `serverless-chess`, the game of chess implemented as a portable serverless cloud application. This single project may be deployed, as is, to multiple serverless clouds. It is an example of the power of a true, portable, multicloud serverless platform.
 
 Here is a list of deployments in the various cloud:
 
@@ -12,7 +12,7 @@ Here is a list of deployments in the various cloud:
 
 And here you can see it also running in a custom built AWS EKS Cluster:
 
-![Whisk Chess in AWS EKS](https://openwhisk.blog/post/advocate/openwhisk-portable-serverless/053.png)
+![Serverless Chess in AWS EKS](https://openwhisk.blog/post/advocate/openwhisk-portable-serverless/053.png)
 
 You can read more on [this blog post](https://openwhisk.blog/portability).
 
@@ -24,16 +24,16 @@ You can deploy your own serverless chess app to the [Nimbella serverless cloud](
 2. Run `nim login` to login or sign-up if you don't have an account (it's free and convenient).
 3. **Run the Nimbella `deploy` command.**
 ```bash
-nim project deploy github:openwhisk-blog/whisk-chess
+nim project deploy github:rabbah/serverless-chess
 ```
 
 You will see output that looks like this:
 ```
-Deploying project 'github:openwhisk-blog/whisk-chess'
+Deploying project 'github:rabbah/serverless-chess'
   to namespace 'your-example-domain'
   on host 'https://apigcp.nimbella.io'
-Started  running ./build.sh in github:openwhisk-blog/whisk-chess/packages/default/chess
-Finished running ./build.sh in github:openwhisk-blog/whisk-chess/packages/default/chess
+Started  running ./build.sh in github:rabbah/serverless-chess/packages/default/chess
+Finished running ./build.sh in github:rabbah/serverless-chess/packages/default/chess
 
 Deployed 1 web content items to
   https://your-example-domain-apigcp.nimbella.io
