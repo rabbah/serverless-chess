@@ -1,0 +1,5 @@
+packages:
+  - name: default 
+    actions:
+      - name: chess
+        runtime: go:1.15
